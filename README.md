@@ -1,5 +1,7 @@
 # Learn Blockchain using Go
 
+Learning basic concepts of Blockchain by implementing one using [Golang](https://go.dev/).
+
 
 ## With Gitpod
 
