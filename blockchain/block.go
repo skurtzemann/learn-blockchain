@@ -17,7 +17,13 @@ type Block struct {
 
 func (b *Block) DeriveHash() {
 	// Join current block data and previous block hash
-	info := bytes.Join([][]byte{b.Data, b.PrevHash}, []byte{})
+	info := bytes.Join(
+		[][]byte{
+			b.Data,
+			b.PrevHash,
+		},
+		[]byte{},
+	)
 	// Calculate hash of info
 	hash := sha256.Sum256(info)
 	// Then assign the result to block hash
